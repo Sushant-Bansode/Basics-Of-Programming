@@ -1,0 +1,25 @@
+/*Print the following pattern
+
+Pattern for N= 3
+    1
+   23
+  456
+78910
+
+Input Format :
+N (Total no. of rows)
+Output Format :
+Pattern in N lines
+*****************************************************************************************************/
+#include <iostream>
+#include <iostream>
+using namespace std;
+int main (){
+  int n;
+ cout << "ENTER A NO." << endl;
+ cin >> n ;
+
+ 
+ 
+}
+
