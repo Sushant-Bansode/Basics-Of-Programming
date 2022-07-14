@@ -27,10 +27,14 @@ int main (){
  cout << "ENTER A NO." << endl;
  cin >> n ;
 
-for(int i = 1 ; i < n ; i++){
-
-  
+for(int i = 1 ; i <= n ; i++){
+int count = i;  
+int value = i;
+while(count--){
+cout << value;
+value++;
 }
-
+cout << endl;  
+}
 
 }
