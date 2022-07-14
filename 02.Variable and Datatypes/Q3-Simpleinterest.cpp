@@ -12,5 +12,4 @@ si = p*n*r*t/100.0;
 cout << si << endl;
 
 
-
 }

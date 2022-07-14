@@ -20,11 +20,4 @@ cout << "NOT AN ALPHABET SO -1 " << endl;
 
 
 
-
-
-
-
-
-
-
 }
