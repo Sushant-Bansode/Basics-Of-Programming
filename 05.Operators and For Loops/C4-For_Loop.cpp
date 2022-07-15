@@ -23,8 +23,10 @@ i++;
 
 // CONDITION STATEMENT REMOVED 
 for(int	i	=	0 ;	;i++){
-cout<<i<<endl;
+cout<<i<<endl; 
+// INFINITE LOOP 
 }					
+
 
 }
 
