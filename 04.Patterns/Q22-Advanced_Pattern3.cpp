@@ -36,7 +36,7 @@ int N;
 cout << "ENTER NUM\n";
 cin >> N;
 int k; 
-k = ((N/2) + 1) ;
+k = N/2 + 1 ;
 int arr[N][N];
 int start = 0 , end = N-1;
 
@@ -52,11 +52,11 @@ k--;
 start++;
 end--;
 }
-arr[(N/2)][(N/2)] = 1;
+arr[(N/2)][(N/2)] = 35;
 
 for (int i = 0 ; i < N ; i++){
     for (int j = 0 ; j < N ; j++){
-    cout << arr[i][j] << " " ;
+    cout << char(arr[i][j]) << " " ;
     }
     cout << "\n";
 }

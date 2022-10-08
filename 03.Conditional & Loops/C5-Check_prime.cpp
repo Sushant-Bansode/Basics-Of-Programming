@@ -9,7 +9,6 @@ int main() {
  bool divided = false;
  while ( d < n ){
  if (n % d == 0 ) {
-     cout << "NOT PRIME" << endl;
      divided = true;
  } 
  d++;
@@ -17,5 +16,7 @@ int main() {
 if (!divided) {
  cout << " PRIME " << endl;
 }
+else
+ cout << "NOT PRIME " << endl;
 
 }

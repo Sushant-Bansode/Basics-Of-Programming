@@ -26,5 +26,37 @@ Sample Output 1:
 
 
 /***************************************************** SOLUTION **************************************************************************/
+#include<bits/stdc++.h>
+using namespace std;
 
-
+void FindTriplet(int arr[], int size, int x) {
+int i,j,k,temp;    
+    for(i=0; i<size; i++)
+    {
+        for(j = i+1; j < size; j++)
+        {
+            //If there is a smaller element found on right of the array then swap it.
+            if(arr[j] < arr[i])
+            {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+	for( i = 0 ; i < size; i++)
+	{
+		//cout <<"I am in loop";
+		for( j = i + 1 ; j < size; j++)
+		{
+			for( k = j + 1 ; k < size ; k++)
+			{
+               // cout <<"I am in loop";
+				if( (arr[i] + arr[j] + arr[k]) == x)
+				{   
+                    cout << arr[i] <<" " <<arr[j]<<" "<<arr[k]<<endl;
+				}			
+			}
+		}
+	}
+}

@@ -20,13 +20,22 @@ Sample Output :
  4567 
 56789    
 *****************************************************************************************************/
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main (){
-  int n;
- cout << "ENTER A NO." << endl;
- cin >> n ;
-
-
-
+int main(){
+    int n;
+    cin>>n;
+    int i=1;
+    while(i <= n){
+        for(int spc = 1; spc <= n-i; spc++){
+            cout << " ";
+        }
+      int j = i,count = i;    
+        while(count--){
+            cout<<j;
+        j++;    
+        }
+        cout<<endl;
+        i++;
+    }
 }

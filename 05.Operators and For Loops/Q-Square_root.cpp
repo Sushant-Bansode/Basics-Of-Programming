@@ -20,12 +20,20 @@ Sample Output 2 :
 
 /*************************************************** SOLUTION *************************************************************************/
 
-
 #include<iostream>
-#include<math.h>
+#include<cmath>
 using namespace std;
 
 int main() {
+cout << "Enter the Number" << endl;
+    int n;
+    cin >> n;
+    int output = 0;
+    while(output * output <= n) {
+        output = output + 1;
+    }
+    output = output - 1;
+    cout << output;
 
 }
 

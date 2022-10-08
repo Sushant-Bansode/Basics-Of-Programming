@@ -1,4 +1,4 @@
-Second Largest
+/*Second Largest
 Take input a stream of n integer elements, find the second largest element present.
 The given elements can contain duplicate elements as well. If only 0 or 1 element is given, the second largest should be INT_MIN ( - 2^31 ).
 Input format :
@@ -23,10 +23,10 @@ Since both the elements are equal here, hence second largest element is INT_MIN 
 
 /*************************************************** SOLUTION *************************************************************************/
 
-
 #include <iostream>
 #include <climits>
 using namespace std;
+
 int main() {
     int n;
     cin >> n;

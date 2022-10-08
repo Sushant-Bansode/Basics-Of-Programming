@@ -1,5 +1,6 @@
 
 // THIS CODE WAS BASICALLY TO LEARN THAT INTEGER/FLOAT IS INT FOR FLOAT TRY TO MAKE IT FLOAT.
+
 #include<iostream>
 using namespace std;
 int main() {

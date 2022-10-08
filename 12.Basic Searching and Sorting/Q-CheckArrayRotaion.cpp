@@ -24,6 +24,7 @@ Sample Output 2:
 
 // arr - input array
 // n - size of array
+// Naive Solution.
 int FindSortedArrayRotation(int arr[], int n) {
 
     int count=1;
@@ -44,8 +45,8 @@ int FindSortedArrayRotation(int arr[], int n) {
         return count;
     }
 }
-// CN SOLUTION
-/*
+
+// Using Binary Search.
 int FindSortedArrayRotation(int *input, int size) {
     int left = 0;
     int right = size - 1;
@@ -58,4 +59,3 @@ int FindSortedArrayRotation(int *input, int size) {
     }
     return left;
 }
-*/

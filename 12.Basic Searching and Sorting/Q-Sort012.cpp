@@ -19,6 +19,7 @@ Sample Input 2:
 Sample Output 2:
 0 0 0 1 1 
 
+/***************************************************** SOLUTION **************************************************************************/
 
 // arr - input array
 // n - size of array
@@ -45,8 +46,10 @@ void sort012(int arr[], int n)  {
         arr[i]=2;
     }
 }
-// CN SOLUTION
-/*
+
+
+// Ideal SOLUTION
+
 #include<bits/stdc++.h>
 using namespace std;
 void sort012(int *A, int n) {
@@ -66,4 +69,4 @@ void sort012(int *A, int n) {
             swap(A[i--], A[k--]); 
         }
     }
-}*/
+}

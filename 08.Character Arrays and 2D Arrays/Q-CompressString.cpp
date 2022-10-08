@@ -19,3 +19,29 @@ a3b2c2dsa
 // input - given string
 // You need to update in the given string itself i.e. in input. No need to return or print.
 
+
+void stringCompression(char input[]){
+    int count = 1;
+    char currentChar = input[0];
+    int i, nextIndex = 1;
+    for(i = 1; input[i] != '\0'; i++){
+        // Count the occurrence of consecutive duplicate character
+        if(input[i] == currentChar){
+            count++;
+        }
+        else{
+            // Append the count with string
+            if(count > 1){
+                input[nextIndex] = char(count + 48);
+                nextIndex++;
+            }
+            currentChar = input[i];
+            input[nextIndex] = input[i];
+            nextIndex++; count = 1;
+        }
+    }
+    if(count > 1){
+        input[nextIndex] = char(count + 48);
+        nextIndex++;
+    }input[nextIndex] = '\0';
+}

@@ -21,8 +21,23 @@ Sample Output 2 :
 
 
 #include<iostream>
+#include<cmath>
 using namespace std;
 int main() {
-
+int n;
+cin >> n;
+int decimal;
+    int dec_value = 0;
+  // Initializing base value to 1, i.e 2^0
+    int base = 1;
+    int temp = n;
+    while (temp) {
+        int last_digit = temp % 10;
+        temp = temp / 10;
+ 
+        dec_value += last_digit * base;
+        base = base * 2;
+    }
+  cout << dec_value;
 
 }

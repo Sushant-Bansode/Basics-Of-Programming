@@ -29,4 +29,23 @@ Sample Output 1:
 
 
 /***************************************************** SOLUTION **************************************************************************/
+#include<bits/stdc++.h>
+using namespace std;
 
+void pairSum(int input[], int size, int x) {
+    for(int i = 0; i < size; i++){
+        for(int j = i + 1; j < size;j++){
+            if(i!=j){
+                if((input[i] + input[j]) == x){
+                    if(input[i] < input[j]){
+                        cout << input[i]<<" "<< input[j] << endl;
+                       
+                    }
+                    else{
+                        cout << input[j]<<" "<< input[i] << endl;
+                    }
+                }
+            }
+        }
+    }
+}

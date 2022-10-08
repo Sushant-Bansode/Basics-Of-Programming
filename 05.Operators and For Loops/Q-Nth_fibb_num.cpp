@@ -24,6 +24,23 @@ Sample Output 2:
 #include<iostream>
 using namespace std;
 int main(){
-  
-  
+   int N;
+    cin>>N;
+    int a =1;int b =1;
+    int fib=0;
+    if(N ==1){
+    	cout<<a;
+	}
+	else if(N==2){
+		cout<<b;
+	}
+	else{
+		for(int i=1; i<= N-1; i++){
+        fib = a + b;
+        
+        a= b;
+        b = fib;
+	}
+	cout<<fib;
+	}  
 }

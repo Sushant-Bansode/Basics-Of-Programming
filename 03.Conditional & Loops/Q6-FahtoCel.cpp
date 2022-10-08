@@ -13,7 +13,6 @@ if ( startf <= 80 && startf >= 0 && endf <= 900 && endf >= startf && step <= 40 
 while ( startf <= endf ){
 cel = (startf - 32)*5.0/9;
 cout << startf << " " << cel << endl;
-
 startf = startf + step;
 }
 

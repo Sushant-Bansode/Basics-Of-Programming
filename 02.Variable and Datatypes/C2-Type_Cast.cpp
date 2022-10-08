@@ -18,7 +18,7 @@ cin >> c;
 a = c;
 cout <<  c << endl;
 // ANOTHER WAY OF WRITING IT MAYBE
-cout <<  ((int)c) << endl;
+cout <<  (int)c << endl;
 
 cout << "ENTER YOUR float FOR RELATED integer " << endl;
 float f;
@@ -26,7 +26,7 @@ cin >> f;
 a = f;
 cout <<  a << endl;
 // ANOTHER WAY OF WRITING IT MAYBE
-cout <<  ((int)f) << endl;
+cout <<  (int)f << endl;
 
 
 int o = a + c;

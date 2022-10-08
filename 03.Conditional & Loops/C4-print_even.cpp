@@ -5,12 +5,10 @@ int n;
  cout << "ENTER n" << endl;
  cin >> n;
  int i = 1;
- int s=0;
- int temp=0;   
+ int s=0;   
  while ( i <= n ) {
  if ( i % 2 == 0 ){
- temp = i;
- s= s + temp;
+ s= s + i;
  }
 i++;
  }

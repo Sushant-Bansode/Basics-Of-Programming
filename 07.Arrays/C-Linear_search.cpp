@@ -26,7 +26,8 @@ Sample Output 2:
 
 
 /***************************************************** SOLUTION **************************************************************************/
-
+#include<bits/stdc++.h>
+using namespace std;
 
 int linearSearch(int arr[], int n ,int val){
     for(int i = 0; i < n; i++){
